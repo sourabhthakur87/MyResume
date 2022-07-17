@@ -193,7 +193,7 @@ header ul li:hover span {
 .about {
     margin-top: 40px;
     margin-left: 130px;
-    height: 100vh;
+    height: 100%;
 }
 
 .about h1 {
@@ -252,4 +252,181 @@ header ul li:hover span {
 
 #morinfo{
     font-size: 20px;
+}
+
+
+
+
+.skills {
+    margin-top: 40px;
+}
+
+
+.skill-bar {
+    width: 800px;
+    padding: 25px 30px;
+    margin: auto;
+}
+
+
+.skill-bar .bar {
+    margin: 20px 0;
+}
+
+
+
+
+.skill-bar .bar .info {
+    margin-bottom: 10px;
+}
+
+.skill-bar .bar .info span {
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.skill-bar .bar .progress-line {
+    position: relative;
+    height: 10px;
+    width: 100%;
+    background-color: #f0f0f0;
+    box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.05),
+        0px 1px rgba(255, 255, 255, 0.8), ;
+
+    border-radius: 10px;
+    transform: scaleX(0);
+    transform-origin: left;
+
+    animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+.bar .progress-line span {
+    height: 100%;
+    width: 80%;
+    background: #6665ee;
+    position: absolute;
+    border-radius: 10px;
+    transform: scaleX(0);
+    transform-origin: left;
+
+    animation: animate 2s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+@keyframes animate {
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+.progress-line.html span {
+    width: 90%;
+}
+
+.progress-line.css span {
+    width: 80%;
+}
+
+.progress-line.python span {
+    width: 60%;
+}
+
+.progress-line.java span {
+    width: 40%;
+}
+.progress-line.js span {
+    width: 55%;
+}
+
+/* 
+
+.bar .progress-line span::before {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: -10px;
+    height: 0;
+    width: 0;
+    border: 7px solid transparent;
+    border-bottom-width: 0;
+    border-right-width: 0;
+    border-top-color: #000;
+} */
+
+.bar .progress-line span::after {
+    position: absolute;
+    right: 0;
+    top: -28px;
+    color: #fff;
+    background-color: #000;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 1px 8px;
+    border-radius: 3px;
+
+}
+
+
+.progress-line.html span::after {
+    content: "90%";
+}
+
+.progress-line.css span::after {
+    content: "80%";
+}
+
+.progress-line.python span::after {
+    content: "60%";
+}
+
+.progress-line.java span::after {
+    content: "40%";
+}
+.progress-line.js span::after {
+    content: "55%";
+}
+
+
+
+#resume{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+#resume h1{
+    margin-left: 150px;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 40px;
+}
+#resume p{
+    margin-left: 160px;
+    font-size: 19px;
+    margin-bottom: 40px;
+}
+
+
+.work{
+    margin-left: 160px;
+   
+}
+.work span,.fa-briefcase,.fa-pencil-square{
+    font-size: 40px;
+    color: rgb(203, 168, 126);
+    margin-bottom: 50px;
+}
+.fa-briefcase{
+    color: black;
+}
+
+.work h2{
+    font-size: 30px;
+    color: rgb(203, 168, 126);
+}
+.work .date{
+    margin-top: 20px;
+    font-size: 20px;
+    color: rgb(185, 185, 185);
 }
