@@ -177,6 +177,9 @@ header ul li:hover span {
     text-align: center;
     font-size: 30px;
 }
+.icon1 a{
+    text-decoration: none;
+}
 
 .ic {
     margin: 0 20px;
