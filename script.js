@@ -1,10 +1,6 @@
-var All = document.getElementById("btn1").onclick = all;
-var web = document.getElementById("btn2").onclick = web;
-var app = document.getElementById("btn3").onclick = app;
-
-
-
-
+document.getElementById("btn1").onclick = all;
+document.getElementById("btn2").onclick = web;
+document.getElementById("btn3").onclick = app;
 
 
 function web() {
@@ -40,8 +36,62 @@ function app() {
 function all() {
     console.log("clicked ALL");
     window.location.reload();
+}
 
 
 
+import { getDatabase, set, ref } from "https://www.gstatic.com/firebasejs/9.9.0/firebase-database.js";
 
+const db = getDatabase();
+
+document.getElementById("send").onclick = insertData;
+
+var name = document.getElementById("name");
+var email = document.getElementById("email");
+var subject = document.getElementById("subject");
+var textarea = document.getElementById("textarea");
+
+var namebox, emailbox, subjectbox, textareabox;
+
+
+function insertData(e) {
+    e.preventDefault();
+    // console.log("Clicked");
+    readFormData();
+    
+    if(namebox=="" && emailbox=="",subjectbox=="",textareabox==""){
+        alert("Input Fields Cannot be Blank")
+    }
+    else
+    {
+        set(ref(db,"ViewerData/" + namebox),{
+            Name:namebox,
+            Email:emailbox,
+            Subject:subjectbox,
+            TextArea:textareabox
+        }).then(()=>{
+            alert("Data Stored Successfully")
+        }).catch((error)=>{
+            alert("Unsuccessful",error)
+        });
+    }
+
+    clearData();
+}
+
+function readFormData() {
+
+    namebox = name.value;
+    emailbox = email.value;
+    subjectbox = subject.value;
+    textareabox = textarea.value;
+
+    console.log(namebox, emailbox, subjectbox, textareabox)
+}
+
+function clearData() {
+    name.value = "";
+    email.value = "";
+    subject.value = "";
+    textarea.value = "";
 }

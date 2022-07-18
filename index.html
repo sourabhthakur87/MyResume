@@ -468,14 +468,15 @@
             </div>
             <div class="form">
                 <form action="">
-                    <input type="text" placeholder="Name">
-                    <input type="email" placeholder="Email">
+                    <input type="text" placeholder="Name" id="name">
+                    <input type="email" placeholder="Email" id="email">
                     <br>
-                    <input type="text" placeholder="Subject">
+                    <input type="text" placeholder="Subject" id="subject">
                     <br>
                     <br>
-                    <textarea name="" id="" cols="92" rows="8" placeholder="Write your message Here...."></textarea>
+                    <textarea name="" id="textarea" cols="92" rows="8" placeholder="Write your message Here...." ></textarea>
                 </form>
+                <!-- <input type="Sumbit" name="" id="send"> -->
                 <button id="send">Send Message</button>
             </div>
         </div>
@@ -511,8 +512,8 @@
             </div>
         </div>
     </footer>
-
-    <script src="./script.js"></script>
+    <script type="module" src="./firebase.js"></script>
+    <script type="module" src="./script.js"></script>
 </body>
 
 </html>
