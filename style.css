@@ -143,7 +143,7 @@ header ul li:hover span {
 }
 
 @keyframes slide {
-    100%{
+    100% {
         top: -360px;
     }
 }
@@ -159,9 +159,6 @@ header ul li:hover span {
     width: 100%;
     left: 0;
     border-left: 2px solid coral;
-    /* background-color: #ddded9;
-    background: #d6d5d1; */
-
     background: rgb(241, 236, 236);
     animation: typing 2.5s steps(10) infinite;
 }
@@ -169,24 +166,24 @@ header ul li:hover span {
 @keyframes typing {
     100% {
         left: 100%;
-        
+
         margin: 0 150px 40px 30px;
     }
 }
 
-.icon1{
+.icon1 {
     margin-top: 30px;
     text-align: center;
     font-size: 30px;
 }
 
-.ic{
+.ic {
     margin: 0 20px;
     color: rgb(45, 38, 38);
     transition: 1s;
 }
 
-.ic:hover{
+.ic:hover {
     transform: scale(1.2);
     color: lightcoral;
 }
@@ -229,7 +226,7 @@ header ul li:hover span {
     font-size: 30px;
     font-weight: 400;
     /* color: lightslategrey; */
-    color:rgb(219, 136, 136);
+    color: rgb(219, 136, 136);
     margin-bottom: 20px;
 }
 
@@ -238,7 +235,7 @@ header ul li:hover span {
     justify-content: space-evenly;
     margin-bottom: 30px;
     margin-top: 30px;
- }
+}
 
 .sicon {
     font-size: 30px;
@@ -249,11 +246,11 @@ header ul li:hover span {
     font-weight: bold;
 }
 
-.nm{
+.nm {
     font-size: 20px;
 }
 
-#morinfo{
+#morinfo {
     font-size: 20px;
 }
 
@@ -336,6 +333,7 @@ header ul li:hover span {
 .progress-line.java span {
     width: 40%;
 }
+
 .progress-line.js span {
     width: 55%;
 }
@@ -384,68 +382,85 @@ header ul li:hover span {
 .progress-line.java span::after {
     content: "40%";
 }
+
 .progress-line.js span::after {
     content: "55%";
 }
 
 
 
-#resume,#portfolio{
+#resume,
+#portfolio,
+#services {
     width: 100%;
     height: 100%;
     margin: auto;
     margin-top: 53px;
 }
 
-#resume h1,#portfolio h1{
+#resume h1,
+#portfolio h1,
+#services h1 {
     margin-left: 150px;
     text-align: center;
-    font-size: 50px;
+    font-size: 40px;
     font-family: 'Poppins', sans-serif;
     margin-bottom: 30px;
 }
-#resume p,#portfolio p{
+
+#resume p,
+#portfolio p,
+#services p {
     margin-left: 160px;
     font-size: 19px;
     margin-bottom: 40px;
 }
 
 
-.work{
+.work {
     margin-left: 160px;
-   
+
 }
-.work span,.fa-briefcase,.fa-pencil-square{
+
+.work span,
+.fa-briefcase,
+.fa-pencil-square {
     font-size: 40px;
     color: rgb(203, 168, 126);
     margin-bottom: 50px;
 }
-.fa-briefcase{
+
+.fa-briefcase {
     color: black;
 }
 
-.work h2{
+.work h2 {
     font-size: 30px;
     color: rgb(203, 168, 126);
 }
-.work .date{
+
+.work .date {
     margin-top: 20px;
     font-size: 20px;
     color: rgb(185, 185, 185);
 }
-.maxbox{
+
+.maxbox {
     display: flex;
     justify-content: space-evenly;
 }
-.imabox{
+
+.imabox {
     margin-left: 160px;
     margin-bottom: 50px;
 }
-.imabox .uplink{
+
+.imabox .uplink {
     margin-left: 400px;
     margin-bottom: 30px;
 }
-.imabox .uplink button{
+
+.imabox .uplink button {
     border: none;
     background: none;
     font-size: 22px;
@@ -454,21 +469,24 @@ header ul li:hover span {
     font-family: 'Poppins', sans-serif;
     color: lightcoral;
 }
-.imabox .uplink button:hover{
+
+.imabox .uplink button:hover {
     color: lightseagreen;
 }
 
-.imgbox1{
+.imgbox1 {
     width: 300px;
     height: 500px;
     position: relative;
 }
-.imgbox1 img{
+
+.imgbox1 img {
     display: block;
     width: 100%;
     height: 100%;
 }
-.text{
+
+.text {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -479,110 +497,249 @@ header ul li:hover span {
     font-size: 20px;
     color: black;
     font-family: 'Open Sans', sans-serif;
-    background-color: rgba(700, 700, 700,0.6);
+    background-color: rgba(700, 700, 700, 0.6);
     opacity: 0;
     transition: 0.5s;
 }
 
-.text1,.text2,.text3,.text4,.text7,.text8{
+.text1,
+.text2,
+.text3,
+.text4,
+.text7,
+.text8 {
     width: 100%;
     height: 100%;
 }
 
-.text5{
+.text5 {
     width: 320px;
     height: 320px;
     margin-top: 15px;
     margin-right: 15px;
 }
-.text6{
+
+.text6 {
     width: 367px;
     height: 464px;
     margin-top: 15px;
     margin-right: 15px;
 }
 
-.link a{
+.link a {
     font-size: 30px;
     text-decoration: none;
     color: black;
 }
 
-.link a:hover{
+.link a:hover {
     color: coral;
 }
-.text:hover{
+
+.text:hover {
     opacity: 1;
     transform: scale(1.1);
 }
-.imgbox2{
+
+.imgbox2 {
     width: 400px;
     height: 600px;
     position: relative;
 }
 
-.imgbox2 img{
+.imgbox2 img {
     display: block;
     width: 100%;
     height: 100%;
 }
 
-.imgbox3{
+.imgbox3 {
     width: 300px;
     height: 400px;
     position: relative;
 }
 
 
-.imgbox3 img{
+.imgbox3 img {
     display: block;
     width: 100%;
     height: 100%;
 }
 
-.b2{
+.b2 {
     margin-top: 30px;
 }
 
 
 
-.imgbox4{
+.imgbox4 {
     width: 350px;
     height: 450px;
     position: relative;
 }
 
 
-.imgbox4 img{
+.imgbox4 img {
     display: block;
     width: 100%;
     height: 100%;
 }
 
-.imgbox5{
+.imgbox5 {
     width: 350px;
     height: 350px;
     position: relative;
 }
 
 
-.imgbox5 img{
+.imgbox5 img {
     display: block;
     width: 100%;
     height: 100%;
 }
 
-.imgbox6{
+.imgbox6 {
     width: 400px;
     height: 500px;
     position: relative;
 }
 
 
-.imgbox6 img{
+.imgbox6 img {
     display: block;
     width: 100%;
     height: 100%;
 }
 
 
+.serbox1,
+.serbox2 {
+    margin-left: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+
+.bx {
+    width: 360px;
+    height: 380px;
+    border-radius: 5px;
+    margin: auto;
+    background-color: rgba(242, 239, 239, 0.279);
+    transition: 0.4s;
+}
+
+.fa-firefox {
+    margin-top: 100px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+}
+
+#services .serbox1 h1,
+#services .serbox2 h1 {
+    margin-left: -1px;
+    font-size: 20px;
+}
+
+.serbox1 .bx h4,
+.serbox2 .bx h4 {
+    margin: 4px;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.logo2,
+.logo4,
+.logo6 {
+    color: orange;
+}
+
+.logo1,
+.logo3,
+.logo5 {
+    color: lightcoral;
+}
+
+.bx:hover {
+    box-shadow: 0px 2px 9px 5px lightgrey;
+}
+
+
+
+
+#contact {
+    margin-top: 80px;
+    margin-left: 150px;
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif;
+}
+
+#contact h1 {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+
+
+.cont {
+    display: flex;
+    justify-content: space-between;
+}
+
+.in {
+    font-size: 20px;
+}
+
+.mr{
+    margin: 20px;
+}
+.mr:hover .icn{
+    background-color: lightcoral;
+    color: white;
+}
+.icn{
+    width: 50px;
+    height: 50px;
+    background: lightblue;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+}
+
+.hd{
+    font-size: 25px;
+    margin-left: 10px;
+}
+.inf{
+    margin-left: 60px;
+    font-size: 15px;
+    color: rgb(201, 197, 197);
+    margin-top: -30px;
+}
+
+.form{
+    margin-right: 20px;
+}
+
+form input{
+    width: 350px;
+    padding: 8px;
+    border: 1px solid black;
+}
+
+#send{
+    margin-left: 300px;
+    width: 170px;
+    height: 50px;
+    border: none;
+    background-color: lightcoral;
+    border-radius: 20px;
+    /* padding: 20px; */
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}
