@@ -139,7 +139,7 @@ header ul li:hover span {
     position: relative;
     top: 0;
     margin-bottom: 30px;
-    animation: slide 8s steps(4) infinite;
+    animation: slide 10s steps(4) infinite;
 }
 
 @keyframes slide {
@@ -163,7 +163,7 @@ header ul li:hover span {
     background: #d6d5d1; */
 
     background: rgb(241, 236, 236);
-    animation: typing 2s steps(10) infinite;
+    animation: typing 2.5s steps(10) infinite;
 }
 
 @keyframes typing {
