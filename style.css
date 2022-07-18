@@ -78,7 +78,7 @@ header ul li a {
 
 
 header ul li:hover {
-    transition: 0.7s;
+    transition: 0.3s;
     width: 130px;
     border-radius: 30px;
     /* background: rgb(4, 130, 130); */
