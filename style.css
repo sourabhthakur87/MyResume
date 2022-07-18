@@ -303,7 +303,8 @@ header ul li:hover span {
 .bar .progress-line span {
     height: 100%;
     width: 80%;
-    background: #6665ee;
+    /* background: #6665ee; */
+    background: lightblue;
     position: absolute;
     border-radius: 10px;
     transform: scaleX(0);
@@ -338,7 +339,7 @@ header ul li:hover span {
     width: 55%;
 }
 
-/* 
+
 
 .bar .progress-line span::before {
     position: absolute;
@@ -351,7 +352,7 @@ header ul li:hover span {
     border-bottom-width: 0;
     border-right-width: 0;
     border-top-color: #000;
-} */
+}
 
 .bar .progress-line span::after {
     position: absolute;
@@ -734,12 +735,65 @@ form input{
 #send{
     margin-left: 300px;
     width: 170px;
-    height: 50px;
+    height: 45px;
     border: none;
     background-color: lightcoral;
-    border-radius: 20px;
+    border-radius: 30px;
     /* padding: 20px; */
-    font-size: 20px;
+    font-size: 18px;
     color: white;
     cursor: pointer;
+    transition: 0.5s;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#send:hover{
+    background-color: coral;
+}
+
+
+footer{
+    margin-top: 30px;
+    width: 100%;
+    height: 50vh;
+    background-color:rgb(241, 236, 236) ;
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content h1{
+   margin: 25px 0px;
+}
+/* .content p,.iconic{
+    margin: 10px 0px;
+} */
+
+.social{
+    width: 40px;
+    height: 40px;
+    background-color: lightcoral;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.social:hover{
+    background-color: coral;
+}
+.copy p{
+    text-align: center;
+    margin: 10px;
+}
+.copy p a{
+    text-decoration: none;
 }
