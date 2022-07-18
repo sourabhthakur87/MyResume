@@ -108,6 +108,7 @@ header ul li:hover span {
     margin-left: -150px;
     color: rgb(219, 136, 136);
     /* color: #aa65ea; */
+    /* color: lightseagreen; */
     font-size: 90px;
 }
 
@@ -226,7 +227,7 @@ header ul li:hover span {
     font-size: 30px;
     font-weight: 400;
     /* color: lightslategrey; */
-    color: rgb(219, 136, 136);
+    color: rgb(195, 101, 101);
     margin-bottom: 20px;
 }
 
@@ -427,23 +428,20 @@ header ul li:hover span {
 .fa-briefcase,
 .fa-pencil-square {
     font-size: 40px;
-    color: rgb(203, 168, 126);
+    color: rgb(197, 159, 112);
     margin-bottom: 50px;
-}
-
-.fa-briefcase {
-    color: black;
+    margin-right: 10px;
 }
 
 .work h2 {
     font-size: 30px;
-    color: rgb(203, 168, 126);
+    color: rgb(207, 163, 109);
 }
 
 .work .date {
     margin-top: 20px;
     font-size: 20px;
-    color: rgb(185, 185, 185);
+    color: rgb(145, 141, 141);
 }
 
 .maxbox {
@@ -695,14 +693,16 @@ header ul li:hover span {
     font-size: 20px;
 }
 
-.mr{
+.mr {
     margin: 20px;
 }
-.mr:hover .icn{
+
+.mr:hover .icn {
     background-color: lightcoral;
     color: white;
 }
-.icn{
+
+.icn {
     width: 50px;
     height: 50px;
     background: lightblue;
@@ -711,28 +711,29 @@ header ul li:hover span {
     line-height: 50px;
 }
 
-.hd{
+.hd {
     font-size: 25px;
     margin-left: 10px;
 }
-.inf{
+
+.inf {
     margin-left: 60px;
     font-size: 15px;
     color: rgb(201, 197, 197);
     margin-top: -30px;
 }
 
-.form{
+.form {
     margin-right: 20px;
 }
 
-form input{
+form input {
     width: 350px;
     padding: 8px;
     border: 1px solid black;
 }
 
-#send{
+#send {
     margin-left: 300px;
     width: 170px;
     height: 45px;
@@ -747,33 +748,34 @@ form input{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-#send:hover{
+#send:hover {
     background-color: coral;
 }
 
 
-footer{
+footer {
     margin-top: 30px;
     width: 100%;
     height: 50vh;
-    background-color:rgb(241, 236, 236) ;
+    background-color: rgb(241, 236, 236);
 }
 
-.content{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.content h1{
-   margin: 25px 0px;
+.content h1 {
+    margin: 25px 0px;
 }
+
 /* .content p,.iconic{
     margin: 10px 0px;
 } */
 
-.social{
+.social {
     width: 40px;
     height: 40px;
     background-color: lightcoral;
@@ -787,13 +789,15 @@ footer{
     margin-bottom: 30px;
 }
 
-.social:hover{
+.social:hover {
     background-color: coral;
 }
-.copy p{
+
+.copy p {
     text-align: center;
     margin: 10px;
 }
-.copy p a{
+
+.copy p a {
     text-decoration: none;
 }
