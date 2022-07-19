@@ -421,6 +421,12 @@ header ul li:hover span {
     margin-bottom: 40px;
 }
 
+#F a{
+    text-decoration: none;
+    color: black;
+    cursor: default;
+}
+
 
 .work {
     margin-left: 160px;
