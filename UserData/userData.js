@@ -109,7 +109,7 @@ function readData(event) {
 
     get(child(dbref, "ViewerData/" + phonebox)).then((snapshot) => {
         if (snapshot.exists()) {
-            phone.value=snapshot.val().Phone;
+            phone.value=snapshot.val().PhoneNo;
             name.value = snapshot.val().Name;
             email.value = snapshot.val().Email;
             subject.value = snapshot.val().Subject;
