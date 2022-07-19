@@ -36,6 +36,7 @@ function DisplayViewer(Viewerdata) {
         let td3 = document.createElement("td");
         let td4 = document.createElement("td");
         let td5 = document.createElement("td");
+        let td6 = document.createElement("td");
         // let td6 = document.createElement("td");
 
 
@@ -50,6 +51,7 @@ function DisplayViewer(Viewerdata) {
         td3.innerText = user.Email;
         td4.innerText = user.Subject;
         td5.innerText = user.TextArea;
+        td6.innerText = user.PhoneNo;
         // td6.appendChild(deletebtn);
 
 
@@ -58,6 +60,7 @@ function DisplayViewer(Viewerdata) {
         tr.appendChild(td3);
         tr.appendChild(td4);
         tr.appendChild(td5);
+        tr.appendChild(td6);
         // tr.appendChild(td6);
 
         tbody.append(tr);
@@ -75,8 +78,9 @@ var name = document.getElementById("name");
 var email = document.getElementById("email");
 var subject = document.getElementById("subject");
 var textarea = document.getElementById("textarea");
+var phone = document.getElementById("phone");
 
-var namebox, emailbox, subjectbox, textareabox;
+var namebox, emailbox, subjectbox, textareabox,phonebox;
 
 
 
@@ -86,8 +90,9 @@ function readFormData() {
     emailbox = email.value;
     subjectbox = subject.value;
     textareabox = textarea.value;
+    phonebox = phone.value;
 
-    console.log(namebox, emailbox, subjectbox, textareabox)
+    console.log(namebox, emailbox, subjectbox, textareabox,phonebox)
 }
 
 
@@ -102,8 +107,9 @@ function readData(event) {
 
     const dbref = ref(db);
 
-    get(child(dbref, "ViewerData/" + namebox)).then((snapshot) => {
+    get(child(dbref, "ViewerData/" + phonebox)).then((snapshot) => {
         if (snapshot.exists()) {
+            phone.value=snapshot.val().Phone;
             name.value = snapshot.val().Name;
             email.value = snapshot.val().Email;
             subject.value = snapshot.val().Subject;
@@ -123,7 +129,8 @@ function updateData(event) {
     console.log("update click")
     // Code to Update the data from Firebase
 
-    update(ref(db, "ViewerData/" + namebox), {
+    update(ref(db, "ViewerData/" + phonebox), {
+        PhoneNo:phonebox,
         Name: namebox,
         Email: emailbox,
         Subject: subjectbox,
@@ -146,7 +153,7 @@ function deleteData(event) {
     }
     else {
         if (confirm("Are Your Sure To Delete:-")) {
-            remove(ref(db, "ViewerData/" + namebox)).then(() => {
+            remove(ref(db, "ViewerData/" + phonebox)).then(() => {
                 alert("Data Removed Successfully");
             }).catch((error) => { alert("UnsuccessFul", error); });
         }
@@ -161,4 +168,5 @@ function clearData() {
     email.value = "";
     subject.value = "";
     textarea.value = "";
+    phone.value = "";
 }

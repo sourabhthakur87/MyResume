@@ -50,9 +50,9 @@ var name = document.getElementById("name");
 var email = document.getElementById("email");
 var subject = document.getElementById("subject");
 var textarea = document.getElementById("textarea");
+var phone = document.getElementById("phone");
 
-var namebox, emailbox, subjectbox, textareabox;
-
+var namebox, emailbox, subjectbox, textareabox,phonebox;
 
 function insertData(e) {
     e.preventDefault();
@@ -64,7 +64,8 @@ function insertData(e) {
     }
     else
     {
-        set(ref(db,"ViewerData/" + namebox),{
+        set(ref(db,"ViewerData/" + phonebox),{
+            PhoneNo:phonebox,
             Name:namebox,
             Email:emailbox,
             Subject:subjectbox,
@@ -85,6 +86,7 @@ function readFormData() {
     emailbox = email.value;
     subjectbox = subject.value;
     textareabox = textarea.value;
+    phonebox = phone.value;
 
     console.log(namebox, emailbox, subjectbox, textareabox)
 }
@@ -94,4 +96,5 @@ function clearData() {
     email.value = "";
     subject.value = "";
     textarea.value = "";
+    phone.value="";
 }

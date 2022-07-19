@@ -19,16 +19,13 @@ button {
 
 
 .container {
-    /* width: 500px;
-    height: 400px; */
-    /* background-color: rgb(232, 161, 161); */
     border-radius: 20px;
     padding: 10px;
 }
 .container1{
        width: 500px;
     /* height: 400px; */
-    height: 70vh;
+    height: 80vh;
     background-color: rgb(232, 161, 161);
 }
 
