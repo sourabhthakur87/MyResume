@@ -47,11 +47,11 @@ function DisplayViewer(Viewerdata) {
         // deletebtn.innerHTML = '<i class="fa fa-trash" aria-hidden="true"></i>';
 
         td1.innerText = ++stdNo;
-        td2.innerText = user.Name;
-        td3.innerText = user.Email;
-        td4.innerText = user.Subject;
-        td5.innerText = user.TextArea;
-        td6.innerText = user.PhoneNo;
+        td3.innerText = user.Name;
+        td4.innerText = user.Email;
+        td5.innerText = user.Subject;
+        td6.innerText = user.TextArea;
+        td2.innerText = user.PhoneNo;
         // td6.appendChild(deletebtn);
 
 
