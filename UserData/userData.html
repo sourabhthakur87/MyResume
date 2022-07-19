@@ -10,11 +10,19 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Display Firebase All User</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./userData.css">
+
+
+    <title>Display Viewer Data</title>
   </head>
   <body>
-    <div class="container p-2">
-      <h2 class="text-center">List of Users</h2>
+    <div class="container p-1">
+      <h2 class="text-center">List of Viewer</h2>
       <table class="table table-striped">
         <thead class="thead-dark">
           <tr>
@@ -23,13 +31,40 @@
             <th>Email</th>
             <th>Subject</th>
             <th>Text</th>
-            <th>Action</th>
           </tr>
         </thead>
         <tbody id="tbody"></tbody>
       </table>
       <!-- <a class="text-center d-block btn btn-primary" href="./Index.html">Create New User</a> -->
     </div>
+
+
+
+    <div class="container1 container">
+        <h2>Viewer Query</h2>
+        <hr>
+        <div class="form">
+            <form action="">
+                Name: &nbsp;&nbsp;<input type="text" id="name">
+                <br>
+                <br>
+                Email:&nbsp;&nbsp;&nbsp; <input type="email" name="" id="email">
+                <br>
+                <br>
+                Subject: <input type="text" name="" id="subject">
+                <br>
+                <br>
+                <textarea name="" id="textarea" cols="55" rows="4" placeholder="TextArea"></textarea>
+
+                <div class="btns">
+                    <button class="btn">Read</button>
+                    <button class="btn">Update</button>
+                    <button class="btn">Delete</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
     <script type="module" src="../firebase.js"></script>
     <script type="module" src="./userData.js"></script>
   </body>
