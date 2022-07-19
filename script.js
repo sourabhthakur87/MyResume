@@ -61,6 +61,7 @@ function insertData(e) {
     
     if(namebox=="" && emailbox=="",subjectbox=="",textareabox==""){
         alert("Input Fields Cannot be Blank")
+        // name.style.border="2px solid red"
     }
     else
     {
