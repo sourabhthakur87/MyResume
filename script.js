@@ -44,7 +44,9 @@ import { getDatabase, set, ref } from "https://www.gstatic.com/firebasejs/9.9.0/
 
 const db = getDatabase();
 
-document.getElementById("send").onclick = insertData;
+
+var btn = document.getElementById("send");
+btn.onclick = insertData
 
 var name = document.getElementById("name");
 var email = document.getElementById("email");
@@ -52,29 +54,32 @@ var subject = document.getElementById("subject");
 var textarea = document.getElementById("textarea");
 var phone = document.getElementById("phone");
 
-var namebox, emailbox, subjectbox, textareabox,phonebox;
+var namebox, emailbox, subjectbox, textareabox, phonebox;
 
 function insertData(e) {
     e.preventDefault();
     // console.log("Clicked");
     readFormData();
-    
-    if(namebox=="" && emailbox=="",subjectbox=="",textareabox==""){
+
+    if (namebox == "" && emailbox == "", subjectbox == "", textareabox == "") {
+        
         alert("Input Fields Cannot be Blank")
-        // name.style.border="2px solid red"
+        btn.disabled = true;
+        // name.style.border="2px solid red"    
+
     }
-    else
-    {
-        set(ref(db,"ViewerData/" + phonebox),{
-            PhoneNo:phonebox,
-            Name:namebox,
-            Email:emailbox,
-            Subject:subjectbox,
-            TextArea:textareabox
-        }).then(()=>{
+    else {
+        btn.disabled = false;
+        set(ref(db, "ViewerData/" + phonebox), {
+            PhoneNo: phonebox,
+            Name: namebox,
+            Email: emailbox,
+            Subject: subjectbox,
+            TextArea: textareabox
+        }).then(() => {
             alert("Data Stored Successfully")
-        }).catch((error)=>{
-            alert("Unsuccessful",error)
+        }).catch((error) => {
+            alert("Unsuccessful", error)
         });
     }
 
@@ -97,5 +102,5 @@ function clearData() {
     email.value = "";
     subject.value = "";
     textarea.value = "";
-    phone.value="";
+    phone.value = "";
 }
