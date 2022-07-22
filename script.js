@@ -46,7 +46,7 @@ const db = getDatabase();
 
 
 var btn = document.getElementById("send");
-btn.onclick = insertData
+btn.onclick = insertData;
 
 var name = document.getElementById("name");
 var email = document.getElementById("email");
@@ -61,15 +61,10 @@ function insertData(e) {
     // console.log("Clicked");
     readFormData();
 
-    if (namebox == "" && emailbox == "", subjectbox == "", textareabox == "") {
-        
-        alert("Input Fields Cannot be Blank")
-        btn.disabled = true;
+    if (namebox != "" && emailbox != "", subjectbox != "", textareabox != "", phonebox != "") {
+        btn.removeAttribute("disabled");
         // name.style.border="2px solid red"    
-
-    }
-    else {
-        btn.disabled = false;
+        btn.removeAttribute("disabled");
         set(ref(db, "ViewerData/" + phonebox), {
             PhoneNo: phonebox,
             Name: namebox,
@@ -81,6 +76,14 @@ function insertData(e) {
         }).catch((error) => {
             alert("Unsuccessful", error)
         });
+
+    }
+    else {
+        
+        
+        alert("Input Fields Cannot be Blank")
+        
+
     }
 
     clearData();

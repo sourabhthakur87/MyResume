@@ -783,12 +783,14 @@ form input {
     transform: translate(-50%, -50%);
     transition: opacity .25s;
 }
-.text3{
+
+.text3 {
     line-height: 45px;
 }
+
 .icontick {
     opacity: 0;
-} 
+}
 
 #send:focus {
     width: 50px;
