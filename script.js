@@ -62,9 +62,7 @@ function insertData(e) {
     readFormData();
 
     if (namebox != "" && emailbox != "", subjectbox != "", textareabox != "", phonebox != "") {
-        btn.removeAttribute("disabled");
         // name.style.border="2px solid red"    
-        btn.removeAttribute("disabled");
         set(ref(db, "ViewerData/" + phonebox), {
             PhoneNo: phonebox,
             Name: namebox,
